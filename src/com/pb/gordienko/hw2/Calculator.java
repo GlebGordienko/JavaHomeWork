@@ -28,7 +28,7 @@ public class Calculator {
             case "/" :
                 if (operand2 == 0){
                 System.out.println("На ноль делить нельзя! В следующий раз попробуйте использовать другое значение для второго числа.");}
-                else {System.out.println(operand1/operand2);}
+                else {System.out.println((double)operand1 / (double)operand2);}
 
                 break;}
 
