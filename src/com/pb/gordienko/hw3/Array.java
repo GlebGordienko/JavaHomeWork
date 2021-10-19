@@ -1,7 +1,5 @@
 package com.pb.gordienko.hw3;
 
-
-
 import java.util.Scanner;
 
 public class Array {
@@ -13,13 +11,11 @@ public class Array {
                 System.out.println("Введите целое число для " + (a + 1) + " элемента массива:");
                 array[a] = scan.nextInt();
             }
-
-            System.out.print("Массив:");
+            System.out.print("Массив: ");
 
             for (int i = 0; i < array.length; i++) {
                 System.out.println(array[i]);
             }
-
 
             int sum = 0;
             for (int j = 0; j < array.length; j++) {
