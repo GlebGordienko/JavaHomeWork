@@ -15,13 +15,13 @@ public class Anagram {
         System.out.println("введите анаграмму");
         String input2 = scan.next();
 
-        String inputchr = meth1(input);
+        String inputchr = meth1(input.toLowerCase());
         char[] charArray = inputchr.toCharArray();
         Arrays.sort(charArray);
         String sortedString = new String(charArray);
 
 
-        String inputchr2 = meth1(input2);
+        String inputchr2 = meth1(input2.toLowerCase());
         char[] charArray2 = inputchr2.toCharArray();
         Arrays.sort(charArray2);
         String sortedString2 = new String(charArray2);
