@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Anagram {
     static String meth1(String A) {
-        return A.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ ]", "");
+        return A.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ]", "");
     }
 
     public static void main(String[] args) {
