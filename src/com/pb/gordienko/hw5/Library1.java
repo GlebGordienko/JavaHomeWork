@@ -24,7 +24,7 @@ public class Library1 {
 
         readerArray[1].takeBook(bookArray[2].getTitle(), bookArray[1].getTitle(), bookArray[0].getTitle());
         readerArray[2].takeBook(bookArray[2].getYear(), bookArray[1].getYear(), bookArray[0].getYear());
-        readerArray[0].takeBook((bookArray[1]));
+        readerArray[0].takeBook((bookArray));
         readerArray[1].returnBook(bookArray[2].getTitle(), bookArray[1].getTitle(), bookArray[0].getTitle());
         readerArray[2].returnBook(bookArray[2].getYear(), bookArray[1].getYear(), bookArray[0].getYear());
         readerArray[0].returnBook((bookArray));
