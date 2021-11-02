@@ -1,7 +1,7 @@
 package com.pb.gordienko.hw5;
 
 
-public class Book1 {
+public class Book {
 
     private String author;
     private String title;
@@ -37,7 +37,7 @@ public class Book1 {
         return year;
     }
 
-    public Book1(String author, String title, int year) {
+    public Book(String author, String title, int year) {
         this.author = author;
         this.title = title;
         this.year = year;

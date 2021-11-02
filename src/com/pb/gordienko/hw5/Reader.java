@@ -1,7 +1,7 @@
 package com.pb.gordienko.hw5;
 
 
-public class Reader1 {
+public class Reader {
     private String Name;
     private String Number;
     private String Fak;
@@ -13,7 +13,7 @@ public class Reader1 {
                 ", " + "факультет: " + Fak + ", " + "дата рождения: " + Birth + ", " + "номер телефона: " + Phone;
     }
 
-    public Reader1(String Name, String Number, String Fak, String Birth, String Phone) {
+    public Reader(String Name, String Number, String Fak, String Birth, String Phone) {
         this.Name = Name;
         this.Number = Number;
         this.Fak = Fak;
@@ -71,10 +71,10 @@ public class Reader1 {
     }
 
 
-    public void takeBook(Book1... book1) {
+    public void takeBook(Book... book) {
         StringBuilder vivod2 = new StringBuilder();
 
-        for (Book1 number : book1) {
+        for (Book number : book) {
             vivod2.append(number.getTitle() + " (" + number.getAuthor() + " " + number.getYear() + " ), ");
 
         }
@@ -101,10 +101,10 @@ public class Reader1 {
     }
 
 
-    public void returnBook(Book1... book12) {
+    public void returnBook(Book... book12) {
         StringBuilder vivod4 = new StringBuilder();
 
-        for (Book1 number : book12) {
+        for (Book number : book12) {
             vivod4.append(number.getTitle() + " (" + number.getAuthor() + " " + number.getYear() + " ), ");
 
         }
