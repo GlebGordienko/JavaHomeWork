@@ -117,7 +117,7 @@ public class Reader1 {
         for (int yearBook : years2) {
             i++;
         }
-        System.out.println("" + Name + " вернуд " + i + " книги");
+        System.out.println("" + Name + " вернул " + i + " книги");
 
     }
 }
