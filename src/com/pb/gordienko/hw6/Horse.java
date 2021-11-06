@@ -1,6 +1,7 @@
 package com.pb.gordienko.hw6;
 
 public class Horse extends Animal{
+    private String datazamenipodkov;
     public Horse(){
         super("grass", "barn","I-go-go","");
     }

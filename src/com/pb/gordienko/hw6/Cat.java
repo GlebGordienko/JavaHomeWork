@@ -3,6 +3,7 @@ package com.pb.gordienko.hw6;
 import java.util.Objects;
 
 public class Cat extends Animal{
+    private String color;
    public Cat(){
 
         super("fish","home","meow","");

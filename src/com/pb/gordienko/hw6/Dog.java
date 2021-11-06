@@ -1,7 +1,9 @@
 package com.pb.gordienko.hw6;
 
 public class Dog extends Animal{
+    private String dataosomotra;
     public Dog(){
+
         super("meat", "doghouse","woof","");
     }
     @Override
