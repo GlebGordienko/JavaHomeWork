@@ -13,8 +13,7 @@ public class Animal {
         this.animalType = this.getClass().getSimpleName();
 
     }
-    //public Animal(){
-    //}
+
 
 
 
