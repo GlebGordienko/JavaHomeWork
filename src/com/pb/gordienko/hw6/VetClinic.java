@@ -11,4 +11,6 @@ public class VetClinic {
         Object obj = wetClazz.newInstance();
         if (obj instanceof Veterinarian){((Veterinarian) obj).treatAnimal(animals);}
 
-}}
+
+
+    }}
