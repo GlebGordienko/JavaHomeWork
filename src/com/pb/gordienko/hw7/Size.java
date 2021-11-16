@@ -12,12 +12,14 @@ public enum Size {
       this.EuroSize = EuroSize;
         this.Description = Description;
     }
-    ///String getDescription0(Size size){
-    ///  return Description;
-    ///}
-   /// void getDescription(String razmer){return ;}
+   public void getDescription0(Size size){
+       System.out.println(Description);
+    }
 
-   /// void getEuroSize() {
+    public void getEuroSize(Size eursize){
+        System.out.println(EuroSize);
+    }
+
 
     }
 
