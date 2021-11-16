@@ -1,19 +1,26 @@
 package com.pb.gordienko.hw7;
 
 public enum Size {
-    XXS("32"),
-    XS("34"),
-    S("36"),
-   M("38"),
-   L("40");
+    XXS("32", "Детский размер"),
+    XS("34","Взрослый размер"),
+    S("36","Взрослый размер"),
+   M("38","Взрослый размер"),
+   L("40","Взрослый размер");
     private String EuroSize;
-    //private String Description;
-    Size(String EuroSize) {
+    private String Description;
+    Size(String EuroSize, String Description) {
       this.EuroSize = EuroSize;
+        this.Description = Description;
     }
-    //Size(String Description) {
-      //  this.Description = Description;
-  //  }
+    ///String getDescription0(Size size){
+    ///  return Description;
+    ///}
+   /// void getDescription(String razmer){return ;}
 
-}
+   /// void getEuroSize() {
+
+    }
+
+
+
 
