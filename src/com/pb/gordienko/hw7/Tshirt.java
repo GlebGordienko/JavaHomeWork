@@ -12,10 +12,10 @@ public class Tshirt extends Clothes implements ManClothes, WomenClothes{
     }
 
     @Override
-    public boolean dressWomen() {
+    public void dressWomen() {
         System.out.println(getClass().getSimpleName()+" "+getSize() +" "+ getColor() +" "+ getPrice() +" гривен");
 
-        return false;
+
     }
 
 
