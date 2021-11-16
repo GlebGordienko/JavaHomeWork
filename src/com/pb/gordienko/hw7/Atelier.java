@@ -4,24 +4,22 @@ public class Atelier {
     static void dressMan(Clothes...clothes) {
         for(Clothes count: clothes){
              if(count instanceof Pants){
-            System.out.println(count.getColor());
+                 ((Pants) count).dressMan();
         }
         else if(count instanceof Tie)
              {
-                 System.out.println(count.getColor());
+                 ((Tie) count).dressMan();
              }
              else if(count instanceof Tshirt)
              {
-                 System.out.println(count.getColor());
+                 ((Tshirt) count).dressMan();
              }}}
 
     static void dressWomen(Clothes...clothes) {
         for(Clothes count: clothes){
             if(count instanceof Skirt){
-            System.out.println(count.getColor());
+            ((Skirt) count).dressWomen();
         }}}
-
-
 
     public static void main(String[] args){
             Pants pants = new Pants(Size.XS, "black", 40);
