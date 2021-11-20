@@ -17,8 +17,10 @@ public class Atelier {
 
     static void dressWomen(Clothes...clothes) {
         for(Clothes count: clothes){
-            if(count instanceof Skirt){
-            ((Skirt) count).dressWomen();
+            if(count instanceof WomenClothes){
+            //((Skirt) count).dressWomen();
+                WomenClothes wc = (WomenClothes) count;
+                wc.dressWomen();
         }}}
 
     public static void main(String[] args){
