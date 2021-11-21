@@ -4,14 +4,87 @@ import java.util.Scanner;
 
 public class Auth {
 
+   private String password;
+   private String login ;
 
-    void signUp (){};
-    void signIn(){};
+    public Auth() {
+
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
 
     Scanner scan = new Scanner(System.in);
 
-    String login = scan.next();
+    public void signUp (String sigin){
+        // InsufficientFundsException {
+       //     if(amount <= balance) {
+         //       balance -= amount;
+        //    } else {
+          //      double needs = amount - balance;
+        //        throw new throws InsufficientFundsException(needs);
+            }
+        }
 
-    String password = scan.next();
 
-}
+    }
+   /// public void signIn(){}
+
+
+
+
+
+
+
+
+    /**
+     * Счет в банке
+     */
+
+
+      //  public Account(int number) {
+      //      this.number = number;
+      //  }
+
+        /**
+      //   * Пополнение счета
+         */
+     //   public void deposit(double amount) {
+     //       balance += amount;
+    //    }
+//
+     //   /**
+      //   * Снятие со счета
+     //    */
+     //   public void withdraw(double amount) throws InsufficientFundsException {
+       //     if(amount <= balance) {
+           //     balance -= amount;
+        //    } else {
+         //       double needs = amount - balance;
+        //        throw new InsufficientFundsException(needs);
+        //    }
+     //   }
+
+       // public double getBalance() {
+       //     return balance;
+      //  }
+
+        //public int getNumber() {
+       //     return number;
+      //  }
+  //  }
+
+//}
