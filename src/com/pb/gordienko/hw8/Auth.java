@@ -1,6 +1,6 @@
 package com.pb.gordienko.hw8;
 
-import java.util.Scanner;
+
 
 public class Auth {
 
@@ -26,22 +26,30 @@ public class Auth {
     public void setLogin(String login) {
         this.login = login;
     }
+String regex = "da-zA-Zа-яёА-ЯЁ0-9";
 
-    Scanner scan = new Scanner(System.in);
 
-    public void signUp (String sigin){
-        // InsufficientFundsException {
-       //     if(amount <= balance) {
-         //       balance -= amount;
-        //    } else {
-          //      double needs = amount - balance;
-        //        throw new throws InsufficientFundsException(needs);
-            }
+    public void signUp (String sigup)throws WrongLoginException{
+        if(sigup.matches("da-zA-Zа-яёА-ЯЁ0-9") ){
+            setLogin(sigup);}
+        else{
+          String correctlog = "Введите корректный логин";
+            throw new WrongLoginException(correctlog);
         }
 
 
     }
-   /// public void signIn(){}
+
+
+
+    }
+    public void signIn (String sigin){
+
+
+
+    }
+
+}
 
 
 
@@ -50,41 +58,3 @@ public class Auth {
 
 
 
-    /**
-     * Счет в банке
-     */
-
-
-      //  public Account(int number) {
-      //      this.number = number;
-      //  }
-
-        /**
-      //   * Пополнение счета
-         */
-     //   public void deposit(double amount) {
-     //       balance += amount;
-    //    }
-//
-     //   /**
-      //   * Снятие со счета
-     //    */
-     //   public void withdraw(double amount) throws InsufficientFundsException {
-       //     if(amount <= balance) {
-           //     balance -= amount;
-        //    } else {
-         //       double needs = amount - balance;
-        //        throw new InsufficientFundsException(needs);
-        //    }
-     //   }
-
-       // public double getBalance() {
-       //     return balance;
-      //  }
-
-        //public int getNumber() {
-       //     return number;
-      //  }
-  //  }
-
-//}
