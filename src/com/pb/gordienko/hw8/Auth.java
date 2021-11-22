@@ -26,23 +26,22 @@ public class Auth {
     public void setLogin(String login) {
         this.login = login;
     }
-String regex = "da-zA-Zа-яёА-ЯЁ0-9";
+
 
 
     public void signUp (String sigup)throws WrongLoginException{
-        if(sigup.matches("da-zA-Zа-яёА-ЯЁ0-9") ){
-            setLogin(sigup);}
-        else{
-          String correctlog = "Введите корректный логин";
-            throw new WrongLoginException(correctlog);
-        }
+        if (sigup.matches("da-zA-Zа-яёА-ЯЁ0-9")) {
+            setLogin(sigup);
+        } else {
+        String correctlog = "Введите корректный логин";
+        throw new WrongLoginException(correctlog);}
 
 
     }
 
 
 
-    }
+
     public void signIn (String sigin){
 
 

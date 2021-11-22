@@ -3,7 +3,7 @@ package com.pb.gordienko.hw8;
 import java.util.Scanner;
 
 public class OnlineShop {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception  {
         Auth auth = new Auth();
 
         Scanner scan = new Scanner(System.in);
@@ -12,10 +12,10 @@ public class OnlineShop {
         String sign;
         System.out.print("Ведите логин  ");
         log = scan.nextLine();
-        System.out.print("Введите пароль ");
-        pas = scan.nextLine();
+       // System.out.print("Введите пароль ");
+      //  pas = scan.nextLine();
 
-        auth.signIn(log);
+        auth.signUp(log);
          //auth.signUp();
 
 
