@@ -11,12 +11,12 @@ public class FileNumbers {
             while (in.hasNextLine()) {
                 Scanner line = new Scanner(in.nextLine());
                 while (line.hasNextInt()) {
-                    int symv = line.nextInt();
-                    if (symv % 2 == 0) {
+                    int a = line.nextInt();
+                    if (a % 2 == 0) {
                         pw.print(0 + " ");
 
                     } else
-                    pw.print(symv + " ");
+                    pw.print(a + " ");
                 }
                 line.close();
                 pw.println();
