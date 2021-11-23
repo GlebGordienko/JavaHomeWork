@@ -39,29 +39,16 @@ public class FileNumbers {
                     writer.write(" ");
                     writer.write(Integer.toString(array[i][j]));
 
-
-
-
                 }
-
                 writer.write("\n");
-
             }
-
-
-
         } catch (Exception e) {
             System.out.println("ошибка" + e);
-
         }
-
-
     }
-
     public static void main(String[] args) throws Exception {
         createNumbersFile();
         createOddNumbersFile();
-
     }
 
 }
