@@ -1,10 +1,33 @@
 package com.pb.gordienko.hw9;
 
-import java.io.FileWriter;
-import java.io.Writer;
+import java.io.*;
+import java.util.Scanner;
 
 
 public class FileNumbers {
+    public static void createOddNumbersFile() throws IOException {
+        try (Scanner in = new Scanner(new File("C://Java/numbers.txt"))) {
+            PrintWriter pw = new PrintWriter(new File("C://Java/odd-numbers.txt"));
+            while (in.hasNextLine()) {
+                Scanner line = new Scanner(in.nextLine());
+                while (line.hasNextInt()) {
+                    int symv = line.nextInt();
+                    if (symv % 2 == 0) {
+                        pw.println(0 + " ");
+
+                    } else
+                    pw.println(symv + " ");
+                }
+                line.close();
+                pw.println();
+            }
+
+            pw.close();
+        } catch (IOException ioException) {
+            System.out.println("Ошибка" + ioException);
+        }
+    }
+
     public static void createNumbersFile() throws Exception {
         try (Writer writer = new FileWriter("C://Java/numbers.txt")) {
             int[][] array = new int[10][10];
@@ -26,6 +49,7 @@ public class FileNumbers {
             }
 
 
+
         } catch (Exception e) {
             System.out.println("ошибка" + e);
 
@@ -36,6 +60,7 @@ public class FileNumbers {
 
     public static void main(String[] args) throws Exception {
         createNumbersFile();
+        createOddNumbersFile();
 
     }
 
