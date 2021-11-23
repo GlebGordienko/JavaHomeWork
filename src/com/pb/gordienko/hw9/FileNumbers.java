@@ -13,10 +13,10 @@ public class FileNumbers {
                 while (line.hasNextInt()) {
                     int symv = line.nextInt();
                     if (symv % 2 == 0) {
-                        pw.println(0 + " ");
+                        pw.print(0 + " ");
 
                     } else
-                    pw.println(symv + " ");
+                    pw.print(symv + " ");
                 }
                 line.close();
                 pw.println();
