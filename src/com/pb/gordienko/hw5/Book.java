@@ -11,8 +11,6 @@ public class Book {
         return title + " ( " + author + " " + year + " )";
     }
 
-    ;
-
     public void setAuthor(String author) {
         this.author = author;
     }

@@ -4,7 +4,7 @@ public class Animal {
     private String food;
     private String location;
     private String voice;
-    private String animalType ;
+    private final String animalType ;
 
     public Animal(String food, String location, String voice, String animalType){
         this.food = food;
